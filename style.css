@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  font-size: 1.5rem;
+}
+p {
+  margin: 3rem;
+  color: brown;
+}
+
+.h1 {
+  color: chartreuse;
+  font-weight: bolder;
+  position: relative;
+}
+.img1 {
+  background: url(./assets/img1.jpeg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero {
+  background: rgb(233, 216, 216);
+  border-radius: 5px;
+  text-align: center;
+  padding: 2rem;
+  backdrop-filter: blur(5px);
+}
+
+.img2 {
+  background: url(./assets/img2.jpeg) no-repeat center center;
+  background-size: cover;
+}
+.img3 {
+  background: url(./assets/img3.jpeg) no-repeat center center;
+  background-size: cover;
+}
+.img4 {
+  background: url(./assets/img4.jpeg) no-repeat center center;
+  background-size: cover;
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+  width: 100vw;
+  height: 100vh;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.down-arrow {
+  position: absolute;
+  bottom: 50px;
+  font-weight: bold;
+  font-size: 3rem;
+  transform: rotate(90deg);
+  animation: go-down 1s infinite;
+}
+
+@keyframes go-down {
+  0% {
+    bottom: 100px;
+  }
+  100% {
+    bottom: 50px;
+    color: red;
+  }
+}
+article {
+  width: 80%;
+  margin: 2rem auto;
+}
+.p {
+  margin-left: 0%;
+}
+
+.title {
+  background: rgb(182, 175, 175);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-weight: bold;
+  letter-spacing: 1rem;
+  backdrop-filter: blur(5px);
+  opacity: 50%;
+}
